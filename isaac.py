@@ -1,10 +1,10 @@
 import boto3
 import time
 
-access_key = "AKIAI6H6YNVHOFYTEL6Q"
-access_secret = "HQU1G2ofDYKz2mVlb1qw/UEOOSkRCYFpRfbkb13E"
+access_key = "INSERT YOUR KEY"
+access_secret = "INSERT YOUR KEY"
 region ="us-east-1"
-queue_url = "https://sqs.us-east-1.amazonaws.com/291631277305/IAN"
+queue_url = "INSERT YOUR URL"
 
 def pop_message(client, url):
     response = client.receive_message(QueueUrl = url, MaxNumberOfMessages = 10)
